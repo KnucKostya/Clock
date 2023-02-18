@@ -1,0 +1,84 @@
+:root {
+    --degHour: 0;
+    --degMin: 0;
+    --degSec: 0;
+}
+
+.totalPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #5656de;
+    height: 100vh;
+}
+
+.clock {
+    width: 400px;
+    height: 400px;
+    background: #0d5165 url("https://miro.medium.com/max/800/1*F1irs2oWARQq1Oc9kCI4OA.png") center center no-repeat;
+    position: relative;
+    border-radius: 50%;
+    margin: auto;
+
+}
+
+.Hhand,
+.Mhand,
+.Shand {
+    position: absolute;
+    transform-origin: bottom;
+    border-radius: 40%;
+}
+
+.Hhand {
+    width: 16px;
+    height: 120px;
+    background: #999;
+    top: calc(50% - 120px);
+    left: calc(50% - 8px);
+    rotate: var(--degHour);
+}
+
+.Mhand {
+    width: 10px;
+    height: 160px;
+    background: #999;
+    top: calc(50% - 160px);
+    left: calc(50% - 5px);
+    rotate: var(--degMin);
+}
+
+.Shand {
+    width: 4px;
+    height: 160px;
+    background: #0bd;
+    top: calc(50% - 160px);
+    left: calc(50% - 2px);
+    rotate: var(--degSec);
+}
+
+.Shand::after {
+    border-radius: 50%;
+    display: block;
+    content: "";
+    width: 30px;
+    height: 30px;
+    background: #0bd;
+    position: absolute;
+    bottom: -15px;
+    left: -15px;
+}
+
+
+.numStyles{
+    font-weight: bold;
+
+}
+
+.numContainer{
+    /*margin-top: 10px;*/
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    background-color: #0d5165;
+}

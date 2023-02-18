@@ -1,0 +1,56 @@
+.batya{
+    display: block;
+    flex-direction: column;
+}
+
+
+
+.select{
+    display: block;
+    display: flex;
+    border:1px solid deepskyblue;
+    width: 135px;
+    height: auto;
+    justify-content: space-between;
+
+}
+
+.select.active{
+/*    border:1px solid deepskyblue;*/
+/*    width: 135px;*/
+/*    height: auto;*/
+/*    display: block;*/
+/*    justify-content: space-between;*/
+}
+.arrow{
+    position: relative;
+    transform: translate3d(0, 6px, 0);
+    background: #000;
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    transition: all 0.2s linear;
+}
+
+.ul{
+    display: block;
+    list-style-type: none;
+}
+
+.li{
+    color:black;
+}
+
+.li:hover{
+    transition: 0.2s;
+    cursor: pointer;
+    color:lightblue;
+}
+
+
+.dropdownMenu{
+    border: 1px solid steelblue;
+    width: 135px;
+    height: auto;
+    display:flex;
+}
